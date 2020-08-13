@@ -12,5 +12,5 @@ app.use(express.static('public'));
 
 app.use('/', indexRoute);
 
-app.listen(4000);
+app.listen(process.env.PORT||4000);
 console.log("Listening to Port 4000");
