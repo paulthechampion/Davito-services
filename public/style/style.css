@@ -31,7 +31,7 @@ header{position:fixed;width:100%; background-color: white;margin:0px auto;top:0%
 .parame{background-color: rgb(220, 224, 226);display: flex; flex-wrap: wrap;padding: 10px;}
 article{text-align:center;}
 .parayou{display: flex; flex-wrap: wrap;margin:0px auto;}
-.youframe{width:23em; height:17em;margin: 0px auto;}
+.youframe{width:22em; height:17em;margin: 0px auto;}
 .subhead{margin: 0px auto;margin-bottom: 0.2em;margin-top: 0.2em;}
 .phbardiv{width:17em; position: absolute;top:100%;right:15%;background-color:rgb(225, 236, 236);display: none;}
 .phbar{padding:10px;padding-bottom:0.5em;display:block;margin: 0px auto;
@@ -52,7 +52,7 @@ section{margin:0;}
 .contitem{margin:25px;}
 .bb{color:rgb(255, 255, 255);}
 .mapif{margin-top:3em;width:95%}
-.socimg{height:3em; border-radius: 15%;margin:10px;}
+.socimg{height:2em; border-radius: 15%;margin:10px;}
 .socimg:hover{cursor: pointer;opacity: 0.7;}
 .socialstuff{margin-top: 2em;}
 .copystuff{background-color: white;text-align: center;padding:5px}
