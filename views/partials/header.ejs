@@ -1,0 +1,51 @@
+<div class="jobbb"></div>
+<div class="loli">
+
+<img src="/images/danlogo.jpg" alt="logo" class="logo">
+
+<nav class= "navtit">
+    <a href="" class="titbar">HOME </a>
+    <a href="" class="titbar">ABOUT US </a>
+    <div class="titserv">
+        <button class="buttSer">SERVICES</button> 
+        <div class="dropss" id="dropss">
+        <a href="" class="serDrop">Immigration</a><br>
+        <a href="" class="serDrop">Sponsorship</a><br>
+        <a href="" class="serDrop">Study Permit</a><br>
+        <a href="" class="serDrop">Visitor Visa</a><br>
+        <a href="" class="serDrop">Super Visa</a><br>
+        <a href="" class="serDrop">Citizenship</a><br>
+        
+        </div>
+    </div>
+    <a href="" class="titbar">FAQ'S</a>
+    <a href="https://forms.gle/kQZW18UB4tvEoeGw6" target="_blank" class="titbar" color="red">ASSESSMENT FORM</a>
+    <a href="#contactMain" class="titbar">CONTACT </a>
+    
+</nav>
+<img src="/images/line.jpg" alt="line" class="line" onclick="openPh(event)">
+<div class="phbardiv" id="phbardivv">
+    <a href="" class="phbar">Home</a><br>
+    <a href="" class="phbar">About</a><br>
+    <a href="" class="phbar">Services</a> <span>></span><br>
+    <a href="" class="phbar">FAQ'S</a><br>
+    <a href="https://forms.gle/kQZW18UB4tvEoeGw6" target="_blank" class="phbar">ASSESSMENT FORM</a><br>
+    <a href="" class="phbar">CONTACT </a><br>
+</div>
+</div>
+
+
+<script>
+    var phstuff = document.getElementById("phbardivv");
+
+    function openPh(event){
+        event.stopPropagation();
+        phstuff.classList.toggle("show");
+    };
+
+window.onclick=function(event){
+       phstuff.classList.remove("show");
+};   
+</script>
+
+

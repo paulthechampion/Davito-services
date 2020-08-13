@@ -1,0 +1,58 @@
+<section class="contbody">
+    <div class="slide-container">
+        <div class="image-container">
+            <img src="/images/slide/canada.png" alt="slide" class="slideImg"/>
+        </div>
+        <div class="image-container">
+            <img src="/images/slide/diver1.jpg" alt="slide" class="slideImg"/>
+        </div>
+        <div class="image-container">
+            <img src="/images/slide/flag.jpg" alt="slide" class="slideImg"/>
+        </div>
+        <div class="image-container">
+            <img src="/images/slide/pass.jpg" alt="slide" class="slideImg"/>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <article class="artt">
+        <h2 class="subhead">IMMIGRATION CONSULTANT IN ONTARIO, CANADA</h2>
+       <div class="parame">
+           
+        <div class="parayou">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et augue blandit, facilisis velit vitae, faucibus massa. Donec blandit accumsan pharetra. Phasellus malesuada rhoncus nibh eget posuere. Nullam ut convallis arcu. Proin purus nulla, placerat at odio ut, sagittis facilisis quam. Curabitur eget lacinia magna. Nullam dui est, volutpat vitae augue eget, gravida egestas arcu. Donec pharetra scelerisque ante. Vivamus facilisis ante at metus malesuada placerat. Etiam ligula elit, pellentesque vel libero non, elementum commodo elit. Nulla ut enim finibus, facilisis nulla id, consectetur urna.
+
+            In et ligula non enim consectetur dictum. Sed lectus felis, hendrerit commodo ultrices vel, commodo vel diam. Aenean facilisis lacus vitae erat tempor, vitae varius orci venenatis. Vestibulum vel porttitor arcu. Proin tempor, lacus sit amet pharetra sagittis, massa nibh vehicula lacus, a sodales tellus orci in dolor. Fusce viverra lacus felis, id lacinia est mattis at. Integer arcu eros, egestas consectetur venenatis vitae, rhoncus gravida velit. Sed quis eros sed odio volutpat dignissim a vel orci. Sed eu pretium dui, eu tincidunt lorem. Nulla at ultrices urna. 
+        </div>
+
+        <div class="parayou">
+            <iframe src="https://www.youtube.com/embed/bCqxZy9Vbnk" class="youframe"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+        </div> 
+    </article>
+</section>
+<script>
+    var slideIndex=0;
+
+show()
+function show(){
+var imageCont= document.getElementsByClassName('image-container');
+for(var i =0; i<imageCont.length; i++){
+    imageCont[i].style.display="none";
+};
+
+slideIndex++;
+
+if(slideIndex>imageCont.length){slideIndex=1};
+
+imageCont[slideIndex-1].style.display="block";
+
+setTimeout(show,4000);
+};
+
+
+</script>

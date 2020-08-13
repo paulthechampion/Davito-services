@@ -1,0 +1,74 @@
+*{
+    margin:0px; padding:0px
+}
+header{position:fixed;width:100%; background-color: white;margin:0px auto;top:0%;z-index: 1;}
+.contbody{margin-top: 6em;}
+.jobbb{border:1px solid red; height:5px; width:100%; background-color: red;
+    box-shadow: 0px 0px 5px 0px grey;}
+.loli{margin-top:5px;}
+.logo{height:5em; width:12em; margin-left:5px}
+.logo:hover{cursor: pointer; }
+.line{height:1.5em; width:1.5em;float: right; margin-right: 20px;margin-top: 20px;}
+.line:hover{height:2em; width:2em;cursor: pointer;}
+.navtit{margin:0px auto;margin-left:1em;
+    position: relative;bottom:45px;display: none;}
+.titbar{text-decoration: none;font-size: 1em; color: black;
+    font-family: Arial, Helvetica, sans-serif;margin:5px;padding: 30px;font-weight:bold}
+.titbar:hover{color: red;}
+.slideImg{width:100%;height:11em;}
+.image-container{margin:0 auto;text-align: center;border-top:2px solid rgb(194, 189, 189);}
+.buttSer{text-decoration: none;font-size: 1em; color: black;
+    font-family: Arial, Helvetica, sans-serif;margin:5px;padding: 30px;
+    font-weight:bold;border: none;background-color: white;}
+.buttSer:hover{color: red;cursor: pointer;}  
+.dropss{width:10em; background-color: rgb(225, 236, 236);border:1px solid rgb(225, 236, 236);
+        position: absolute;left:33%;top:150%; display:none;font-family: Arial, Helvetica, sans-serif;}
+.titserv{display:inline;}   
+.titserv:hover .dropss{display:block;}
+.serDrop{text-decoration: none;color: black;display:inline-block;
+    font-size: 1.1em; border-top: 1px solid rgb(197, 195, 195);padding:10px;width:7.9em}
+.serDrop:hover{border-top:3px solid red; cursor: pointer;background-color: white;}
+.parame{background-color: rgb(220, 224, 226);display: flex; flex-wrap: wrap;padding: 10px;}
+article{text-align:center;}
+.parayou{display: flex; flex-wrap: wrap;margin:0px auto;}
+.youframe{width:23em; height:17em;margin: 0px auto;}
+.subhead{margin: 0px auto;margin-bottom: 0.2em;margin-top: 0.2em;}
+.phbardiv{width:17em; position: absolute;top:100%;right:15%;background-color:rgb(225, 236, 236);display: none;}
+.phbar{padding:10px;padding-bottom:0.5em;display:block;margin: 0px auto;
+    text-decoration: none;color:black;font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid rgb(197, 195, 195)}
+.phbar:hover{border-top:3px solid red; cursor: pointer;background-color: white;}
+footer{height:100%; position: relative;bottom: 0%;left:0%;
+    background-image: url("/images/skyline1.jpg");background-repeat: no-repeat;
+    width:100%;background-size: cover;background-position: center; background-color: darkblue;font-family: Arial, Helvetica, sans-serif;}
+main {min-height: 100%;margin-bottom: -100px;}
+main:after {content: "";display: block;height: 100px;}
+section{margin:0;}
+.show{display: block;}
+.hfoot{text-align: center;color:rgb( 255, 87, 51);padding-top: 1em;}
+.contimg{height:2em;width: 2em;border-radius: 100%; background-color: red;padding:5px;}
+.contact11{display: flex;flex-wrap: wrap; margin: 0px auto; margin-top: 2em;text-align: center;
+    justify-content: center;color:white}
+.contitem{margin:25px;}
+.bb{color:rgb(255, 255, 255);}
+.mapif{margin-top:3em;width:95%}
+.socimg{height:3em; border-radius: 15%;margin:10px;}
+.socimg:hover{cursor: pointer;opacity: 0.7;}
+.socialstuff{margin-top: 2em;}
+.copystuff{background-color: white;text-align: center;padding:5px}
+@media(min-width:1000px){
+  
+    .navtit{display: inline;}  
+    .loli{height: 7em;}
+    .logo{width:15em; height:7em; margin-left:20px;}
+    .line{display:none}
+    .slideImg{height:30em;}
+    .parayou{width:50%;}
+    .youframe{width:95%; height:15em}
+    .subhead{margin-bottom: 1em;margin-top: 1em;}
+    .contbody{margin-top: 11em;}
+    .phbardiv{display: none;}
+    .contimg{height:4em;width: 4em;}
+    .hfoot{padding-top: 2em;font-size: 2em;}
+    
+}
