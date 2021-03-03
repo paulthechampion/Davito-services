@@ -1,0 +1,84 @@
+header{
+    width:100%;
+     background-color: rgb(255, 255, 255,0.9);
+     margin:0px auto;
+     top:0%;
+    z-index: 1;
+    text-align: center;
+}
+.loli{
+    margin-top:5px;
+    height:5em
+}
+.logo{
+    height: 3em;
+    width: 3em;
+    
+    color: rgb(255, 255, 255,0.9);
+   
+}
+
+.logo-div{
+    position: absolute;
+    left:5%;
+    height:6em; 
+    width:6em; 
+    text-align: center;
+}
+.logo:hover{
+    cursor: pointer; 
+}
+
+.logo-write{
+    font-size: .7em;
+}
+.line{
+    height:1.5em; 
+    width:1.5em;
+    float: right;
+     margin-right: 20px;
+     margin-top: 20px;
+}
+.line:hover{
+    height:2em; 
+    width:2em;
+    cursor: pointer;
+}
+.navtit{
+    margin:0px auto;
+    position: relative;
+    bottom:45px;
+    display: none;
+}
+.titbar{
+    text-decoration: none;
+    font-size: 1em;
+     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+    padding: 30px;
+    font-weight:bold
+}
+
+.titbar:hover{
+    color: red;
+}
+
+.jobbb{
+    border:1px solid red; 
+    height:5px; 
+    width:100%;
+     background-color: red;
+    box-shadow: 0px 0px 5px 0px grey;
+}
+
+
+@media(min-width :1085px){
+    .titbar{padding:15px;margin:2px}
+        .navtit{display: inline-block;margin-top:5em;margin-left: 7%;}  
+        .loli{height: 6em;}
+        .logo{width:6em; height:4em;margin-right: 5em;}
+        .line{display:none}
+        .phbardiv{display: none;}
+
+}        
