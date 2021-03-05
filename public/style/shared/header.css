@@ -32,12 +32,49 @@ header{
 .logo-write{
     font-size: .7em;
 }
+.phbardiv{
+    width:270px; 
+    position: fixed;
+    top:0%;
+    height: 100%;
+    right:-270px;
+    background-color:rgb(255, 255, 255);
+    z-index: 4;
+    text-align: left;
+    transition: all 1s ease-in-out;
+    padding-top: 7em;
+}
+
+.phbar{
+    padding:1em;
+    padding-bottom:0.5em;
+    display:block;
+    margin: 0px auto;
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+.phbar:hover{
+    border-top:3px solid red;
+     cursor: pointer;
+     background-color: white;
+    }
 .line{
     height:1.5em; 
     width:1.5em;
     float: right;
      margin-right: 20px;
      margin-top: 20px;
+     z-index: 10;
+}
+
+.cancel{
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 .line:hover{
     height:2em; 
