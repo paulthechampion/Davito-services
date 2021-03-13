@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yusei+Magic&display=swap');
 @import "shared/header.css";
 @import "shared/footer.css";
+@import "shared/slider.css";
+@import "shared/anime.css";
+        *,
+        *:after,
+        *:before {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
 
-*{
-    margin:0px;
-     padding:0px;
-     font-family: 'Roboto', sans-serif;
-}
+        ::-webkit-scrollbar{
+            display: none;
+        }
 
-html{
-    scroll-behavior: smooth;
-}
+        
+        
+        body,
+        html {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            
+        }
+
 .rcic-logo{
     display: inline;
 }
@@ -19,11 +39,13 @@ html{
     height:15em;
 }
 
-
+.contbody{
+    height: 100%;
+}
 .consult-btn{
     position: absolute;
     left: 27%;
-    top:30%;
+    top:60%;
     outline: none;
     text-decoration: none;
     color: white;
@@ -31,6 +53,7 @@ html{
     padding: 10px;
     border-radius: 5px;
     font-size: 1em;
+    transition: 0.5s ease-in-out;
 }
 
 .aff-link{
@@ -102,7 +125,12 @@ html{
   }
 
   .artt{
-    background-color: rgb(230, 247, 255);margin: 0;padding: 0;text-align: center;
+    background-image: linear-gradient(to left, rgb(25, 121, 165) , rgb(0, 0, 0));
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+    color: white;
+    
    
   }
   h2{
@@ -123,12 +151,18 @@ article{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin: 5%;
+   padding:5%
+    
 }
-
+.affiliate{
+    background-color: white;
+}
 .affiliate-words{
     width: 100%;
    
+}
+.affiliate-header{
+    font-size: 1.5em;
 }
 
 .affiliate-logo-div{
@@ -175,8 +209,10 @@ li{
     margin: auto;
     display: block;
     width: 100%;
-    padding: 1em;
+  
+    
 }
+
 
 .dan-pic{
     height: 15em;
@@ -195,15 +231,19 @@ li{
 }
 
 .contact{
-    background-color: rgb(230, 247, 255) 
+    background-image: linear-gradient(to right, rgb(25, 121, 165) , rgb(0, 0, 0));
+    color: white;
 }
+.services{
+    background-color:white;
+    color: black;
+    padding-bottom: 2em;
 
-.about{
-    background-color: rgb(230, 247, 255) ;
+    
 }
-
 h2{
     padding: 1em;
+    margin: 0;
 }
 
 .socialstuff{
@@ -226,6 +266,9 @@ textarea{
     margin: 0 auto;
     justify-content: space-around;
     
+}
+.subhead{
+    margin-bottom: 2em;
 }
 
 .contact-form-div{
@@ -261,7 +304,7 @@ textarea{
     padding: 10px;
     border-radius: 10px 10px;
     position: relative;
-    left:7em;
+    left:6em;
 }
 .form-btn:hover{
     color:rgb(11, 107, 197)  ;
@@ -283,6 +326,9 @@ textarea{
         width: 50%;
        
     }
+    .affiliate-header{
+        font-size: 2em;
+    }
     .slide-word-div{
         height:30em;
         width:30%;
@@ -291,6 +337,14 @@ textarea{
     }
     li{
         width: 45%;
+        padding: 1em;
+    }
+    .li-right{
+        text-align: right;
+    }
+    
+    .li-mid{
+        text-align: center;
     }
     .slideImg{height:30em;}
     .parayou{width:50%;}
@@ -305,7 +359,7 @@ textarea{
     .consult-btn{
         position: absolute;
         left: 37%;
-        top:60%;
+        top:70%;
         padding: 10px;
         border-radius: 5px;
         font-size: 2em;
@@ -328,6 +382,7 @@ textarea{
         margin: auto;
        
     }
+    
 }
 
 

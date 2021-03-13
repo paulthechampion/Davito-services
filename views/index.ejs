@@ -1,25 +1,18 @@
-<section class="contbody">
-    <div class="slide-container">
-        <div class="image-container">
-            <img src="/images/slide/canada.png" alt="slide" class="slideImg"/>
+<div class="contbody">
+    <div class="slider">
+        <!--image slider-->
+        
+            <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+            <nav class="slider-nav">
+                <a href="#" class="main-nav prev" data-nav="previous">Prev</a>
+                <a href="#" class="main-nav next" data-nav="next">Next</a>
+            </nav>
+        
         </div>
-        <div class="image-container">
-            <img src="/images/slide/diver1.jpg" alt="slide" class="slideImg"/>
-        </div>
-        <div class="image-container">
-            <img src="/images/slide/flag1.jpg" alt="slide" class="slideImg"/>
-        </div>
-        <div class="image-container">
-            <img src="/images/slide/pass.jpg" alt="slide" class="slideImg"/>
-        </div>
-
-       
-          
             <a href="https://forms.gle/kQZW18UB4tvEoeGw6" class="consult-btn" target="_blank">BOOK CONSULTATION</a>
-       
-    </div>
 
-</section>
+  
+</div>    
 
 <section  class="about" id="about">
     <div class="artt">
@@ -63,7 +56,7 @@
             visit family and friends, do business, or transit through Canada, and how to extend your stay.<br/>
             Book a consultation with us today so we can discuss your Canada immigration plans.
         </li>
-        <li><h3>Study</h3>
+        <li class="li-right"><h3>Study</h3>
             We help Students looking to immigrate to Canada to study by securing admissions 
             into reputable schools that meet your budget. We are affiliated to major high schools, 
             colleges and universities in Canada.
@@ -77,14 +70,14 @@
             experience class, caregiver pathway etc.<br/>
             Book a consultation with us today so we can discuss your Canada immigration plans.
         </li>
-        <li><h3>Sponsorship</h3>
+        <li class="li-right"><h3>Sponsorship</h3>
             We can help you sponsor your relatives, including your spouse, partner, children, parents, 
             grandparents, and others to immigrate<br/>
             Book a consultation with us today so we can discuss your Canada Sponsorship immigration plans.
             Call or email us today to get started
         </li>
         <li>
-            <h3>Others</h3>
+            <h3 class="li-mid">Others</h3>
             We offer other immigration services like getting into the express entry pool and improving your CRS score, 
             inadmissibility issues, previous visa rejection, visa renewal or citizenship application.
             Schedule a consultation with us so we can discuss your unique immigration problem and provide you 
@@ -148,10 +141,10 @@
     
     </div>
 </section>
-<section class="affiliate">
+<div class="affiliate">
     <div class="affiliate-flex">
         <div class="affiliate-words">
-            <h1>DAVITO IMMIGRATION SERVICES</h1>
+            <h1 class="affiliate-header">DAVITO IMMIGRATION SERVICES</h1>
             <p>We affiliate with a variety of Schools for admission processing, contact us to find out more.</p>
         </div>
         <div class="affiliate-logo-div">
@@ -159,27 +152,72 @@
             <a href="https://www.conestogac.on.ca/" class="aff-link" target="_blank"><img src="/images/cc.png" class="affiliate-img"/></a>
         </div>
     </div>
-</section>
+</div>
+   
 <script>
-    var slideIndex=0;
+     
 
-show()
-        function show(){
-        var imageCont= document.getElementsByClassName('image-container');
-        for(var i =0; i<imageCont.length; i++){
-            imageCont[i].style.display="none";
-        };
+        const images = ["/images/slide/test1.v1.png", "/images/slide/hockey.v1.png", "/images/slide/cn.v1.png", "/images/slide/passport.v1.png",]
+const texts= [["Immigration"],["Migrate to Canada"],["Easy Application"],["Fast and Reliable"]];
 
-        slideIndex++;
 
-        if(slideIndex>imageCont.length){slideIndex=1};
+rgbKineticSlider= new rgbKineticSlider({
+    slideImages: images, // array of images > must be 1920 x 1080
+  itemsTitles: texts, // array of titles / subtitles
 
-        imageCont[slideIndex-1].style.display="block";
+  backgroundDisplacementSprite: 'http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg', // slide displacement image 
+  cursorDisplacementSprite: 'http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png', // cursor displacement image
 
-        setTimeout(show,5000);
-        };
+  cursorImgEffect : true, // enable cursor effect
+  cursorTextEffect : false, // enable cursor text effect
+  cursorScaleIntensity : 0.65, // cursor effect intensity
+  cursorMomentum : 0.14, // lower is slower
 
-        window.addEventListener("DOMContentLoaded", function() {
+  swipe: true, // enable swipe
+  swipeDistance : window.innerWidth * 0.4, // swipe distance - ex : 580
+  swipeScaleIntensity: 2, // scale intensity during swipping
+
+  slideTransitionDuration : 1, // transition duration
+  transitionScaleIntensity : 30, // scale intensity during transition
+  transitionScaleAmplitude : 160, // scale amplitude during transition
+
+  nav: true, // enable navigation
+  navElement: '.main-nav', // set nav class
+
+  imagesRgbEffect : false, // enable img rgb effect
+  imagesRgbIntensity : 0.9, // set img rgb intensity
+  navImagesRgbIntensity : 80, // set img rgb intensity for regular nav 
+
+  textsDisplay : true, // show title
+  textsSubTitleDisplay : true, // show subtitles
+  textsTiltEffect : true, // enable text tilt
+  googleFonts : ['Playfair Display:700', 'Roboto:400'], // select google font to use
+  buttonMode : false, // enable button mode for title
+  textsRgbEffect : true, // enable text rgb effect
+  textsRgbIntensity : 0.03, // set text rgb intensity
+  navTextsRgbIntensity : 15, // set text rgb intensity for regular nav
+
+  textTitleColor : 'red', // title color
+  textTitleSize : 125, // title size
+  mobileTextTitleSize : 50, // title size
+  textTitleLetterspacing : 3, // title letterspacing
+
+  textSubTitleColor : 'white', // subtitle color ex : 0x000000
+  textSubTitleSize : 21, // subtitle size
+  mobileTextSubTitleSize : 21, // mobile subtitle size
+  textSubTitleLetterspacing : 2, // subtitle letter spacing
+  textSubTitleOffsetTop : 90, // subtitle offset top
+  mobileTextSubTitleOffsetTop : 90, // mobile subtitle offset top
+
+        // enable autoplay
+    autoPlay : true,
+    autoPlaySpeed : 5000
+})     
+
+
+
+
+window.addEventListener("DOMContentLoaded", function() {
 
 // get the form elements defined in your form HTML above
 

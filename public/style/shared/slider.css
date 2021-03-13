@@ -1,0 +1,38 @@
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;background-color: white;
+    
+   
+}
+.rgbKineticSlider{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;background-color: white;
+}
+
+canvas{
+    position: absolute;
+    display: block;
+    top:0;
+    left: 0;background-color: white;
+}
+.slider-nav a{
+    text-decoration: none;
+    position: absolute;
+    top: 46vh;
+    z-index: 1;
+    transition: 0.3s;
+    background: black;
+    color: white;
+}
+.slider-nav a.next{
+    right: 10vw;
+}
+.slider-nav a.prev{
+    left:10vw;
+}
