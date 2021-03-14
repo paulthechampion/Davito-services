@@ -39,9 +39,7 @@
     height:15em;
 }
 
-.contbody{
-    height: 100%;
-}
+
 .consult-btn{
     position: absolute;
     left: 27%;
@@ -346,7 +344,7 @@ textarea{
     .li-mid{
         text-align: center;
     }
-    .slideImg{height:30em;}
+    
     .parayou{width:50%;}
     .parayou2{width:50%;}
     .youframe{width:95%; height:15em}

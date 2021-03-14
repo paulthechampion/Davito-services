@@ -1,14 +1,32 @@
 <div class="contbody">
-    <div class="slider">
-        <!--image slider-->
-        
-            <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-            <nav class="slider-nav">
-                <a href="#" class="main-nav prev" data-nav="previous">Prev</a>
-                <a href="#" class="main-nav next" data-nav="next">Next</a>
-            </nav>
-        
+    <div class="SlideContainer">
+        <div class="ImgCont">
+            <div class="Imagess fade">
+                <img src="/images/slide/test1.v1.png" alt="real estate" class="slide-img"/>
+                <p class="slide-word word1">Immigration</p>
+            </div>
+            <div class="Imagess fade">
+                <img src="/images/slide/hockey.v1.png" alt="real estate" class="slide-img"/>
+                <p class="slide-word word2">Migrate To Canada</p>
+            </div>
+            <div class="Imagess fade">
+                <img src="/images/slide/cn.v1.png" alt="real estate" class="slide-img"/>
+                <p class="slide-word word3">Easy Application</p>
+            </div>
+            <div class="Imagess fade">
+                <img src="/images/slide/passport.v1.png" alt="real estate" class="slide-img"/>
+                <p class="slide-word word4">Fast and Reliable</p>
+            </div>
+
         </div>
+        
+        <div style="text-align:center" class="dot-div">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
             <a href="https://forms.gle/kQZW18UB4tvEoeGw6" class="consult-btn" target="_blank">BOOK CONSULTATION</a>
 
   
@@ -157,64 +175,29 @@
 <script>
      
 
-        const images = ["/images/slide/test1.v1.png", "/images/slide/hockey.v1.png", "/images/slide/cn.v1.png", "/images/slide/passport.v1.png",]
-const texts= [["Immigration"],["Migrate to Canada"],["Easy Application"],["Fast and Reliable"]];
+  
+        var SlideIndex=0;
+        Show();
+        function Show(){
+            var i;
+            var SlideCont=document.getElementsByClassName("Imagess");
+            var dotss=document.getElementsByClassName("dot");
+            
+            for(i=0; i<SlideCont.length;i++){
+                SlideCont[i].style.display="none";
+            }
 
+            SlideIndex++
+            if(SlideIndex > SlideCont.length){SlideIndex=1;}
 
-rgbKineticSlider= new rgbKineticSlider({
-    slideImages: images, // array of images > must be 1920 x 1080
-  itemsTitles: texts, // array of titles / subtitles
+            for(i=0; i<dotss.length;i++){
+                dotss[i].className=dotss[i].className.replace(" active", "");
+            }
 
-  backgroundDisplacementSprite: 'http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg', // slide displacement image 
-  cursorDisplacementSprite: 'http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png', // cursor displacement image
-
-  cursorImgEffect : true, // enable cursor effect
-  cursorTextEffect : false, // enable cursor text effect
-  cursorScaleIntensity : 0.65, // cursor effect intensity
-  cursorMomentum : 0.14, // lower is slower
-
-  swipe: true, // enable swipe
-  swipeDistance : window.innerWidth * 0.4, // swipe distance - ex : 580
-  swipeScaleIntensity: 2, // scale intensity during swipping
-
-  slideTransitionDuration : 1, // transition duration
-  transitionScaleIntensity : 30, // scale intensity during transition
-  transitionScaleAmplitude : 160, // scale amplitude during transition
-
-  nav: true, // enable navigation
-  navElement: '.main-nav', // set nav class
-
-  imagesRgbEffect : false, // enable img rgb effect
-  imagesRgbIntensity : 0.9, // set img rgb intensity
-  navImagesRgbIntensity : 80, // set img rgb intensity for regular nav 
-
-  textsDisplay : true, // show title
-  textsSubTitleDisplay : true, // show subtitles
-  textsTiltEffect : true, // enable text tilt
-  googleFonts : ['Playfair Display:700', 'Roboto:400'], // select google font to use
-  buttonMode : false, // enable button mode for title
-  textsRgbEffect : true, // enable text rgb effect
-  textsRgbIntensity : 0.03, // set text rgb intensity
-  navTextsRgbIntensity : 15, // set text rgb intensity for regular nav
-
-  textTitleColor : 'red', // title color
-  textTitleSize : 125, // title size
-  mobileTextTitleSize : 50, // title size
-  textTitleLetterspacing : 3, // title letterspacing
-
-  textSubTitleColor : 'white', // subtitle color ex : 0x000000
-  textSubTitleSize : 21, // subtitle size
-  mobileTextSubTitleSize : 21, // mobile subtitle size
-  textSubTitleLetterspacing : 2, // subtitle letter spacing
-  textSubTitleOffsetTop : 90, // subtitle offset top
-  mobileTextSubTitleOffsetTop : 90, // mobile subtitle offset top
-
-        // enable autoplay
-    autoPlay : true,
-    autoPlaySpeed : 5000
-})     
-
-
+            SlideCont[SlideIndex-1].style.display= "block";
+            dotss[SlideIndex-1].className+=" active";
+            setTimeout(Show ,4000);
+        }
 
 
 window.addEventListener("DOMContentLoaded", function() {
